@@ -1,5 +1,5 @@
 ---
-title: Cap Recognizer
+title: Nut Recognizer
 emoji: 🌍
 colorFrom: blue
 colorTo: gray
@@ -12,6 +12,5 @@ license: apache-2.0
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference <br/>
 
-HuggingFace Spaces App URL: https://huggingface.co/spaces/msideadman/cap-recognizer
-
-Gradio App URL: https://aa658403-2945-4237.gradio.live
+HuggingFace Spaces App URL: 
+Gradio App URL: 
