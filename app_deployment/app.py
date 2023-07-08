@@ -23,7 +23,7 @@ nut_labels = (
     "raw Ginkgo nut"
 )
 
-model = load_learner('nut-recognizer-v4 .pkl')
+model = load_learner('nut-recognizer-v11 .pkl')
 
 
 def recognize_image(image):
