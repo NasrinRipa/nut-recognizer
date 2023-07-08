@@ -1,14 +1,4 @@
----
-title: Nut Recognizer
-emoji: 🌍
-colorFrom: blue
-colorTo: gray
-sdk: gradio
-sdk_version: 3.16.0
-app_file: app.py
-pinned: false
-license: apache-2.0
----
+
 # Nut Recognizer
 
 An image classification model for nut recognition, including data collection, cleaning, model training, deployment, and API integration.
@@ -48,7 +38,7 @@ The Nut Recognizer model is capable of classifying 14 different types of nuts:
 
 The trained model was deployed to the HuggingFace Spaces Gradio App. You can find the implementation in the `deployment` folder or access it [here](https://huggingface.co/spaces/nasrin2023ripa/nut-recognizer). Below is a screenshot of the deployed application:
 
-![Nut Recognizer App](app_deployment/raw-almonds.png)
+![Nut Recognizer App](raw-almonds.png)
 
 ## API Integration with GitHub Pages
 
