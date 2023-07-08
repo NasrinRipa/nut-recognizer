@@ -37,7 +37,7 @@ The Nut Recognizer model is capable of classifying 14 different types of nuts:
 
 The trained model was deployed to the HuggingFace Spaces Gradio App. You can find the implementation in the `deployment` folder or access it [here](https://huggingface.co/spaces/nasrin2023ripa/nut-recognizer). Below is a screenshot of the deployed application:
 
-![Nut Recognizer App](app_deployment/raw-almonds.png)
+![Nut Recognizer App](app_deployment/nut-recognizer-cashews.png)
 
 ## API Integration with GitHub Pages
 
