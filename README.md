@@ -41,6 +41,6 @@ The trained model was deployed to the HuggingFace Spaces Gradio App. You can fin
 
 ## API Integration with GitHub Pages
 
-The deployed model API is integrated into the [GitHub Pages Website](nasrinripa.github.io/nut-recognizer/). Implementation details and other related information can be found in the `docs` folder.
+The deployed model API is integrated into the [here](https://nasrinripa.github.io/nut-recognizer/). Implementation details and other related information can be found in the `docs` folder.
 
 
