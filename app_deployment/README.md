@@ -10,7 +10,7 @@ pinned: false
 license: apache-2.0
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference <br/>
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference <br>
 
-HuggingFace Spaces App URL: 
-Gradio App URL: 
+HuggingFace Spaces App URL: https://huggingface.co/spaces/nasrin2023ripa/nut-recognizer
+Gradio App URL: https://d9c007ba5dffb70acf.gradio.live/
