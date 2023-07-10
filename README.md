@@ -31,12 +31,12 @@ The Nut Recognizer model is capable of classifying 14 different types of nuts:
 
 ## Training and Data Cleaning
 
-- **Training:** The model was fine-tuned using the resnet34 architecture for 5 epochs, repeated 3 times, achieving an accuracy of approximately 80%.
+- **Training:** The model was fine-tuned using the resnet34 architecture for 5 epochs, repeated 3 times, achieving an accuracy of approximately 90%.
 - **Data Cleaning:** A significant amount of time was spent on data cleaning due to noise in the collected data. The fastai ImageClassifierCleaner tool was used to clean and update the dataset after each training iteration, except for the final model iteration.
 
 ## Model Deployment
 
-The trained model was deployed to the HuggingFace Spaces Gradio App. You can access the implementaion [here](https://huggingface.co/spaces/nasrin2023ripa/nut-recognizer). I used the nut-recognizer-v11.pkl from the 2 files in the 'models' folder for this implementation. Below is a screenshot of the deployed application:
+The trained model was deployed to the HuggingFace Spaces Gradio App. You can access the implementaion [here](https://huggingface.co/spaces/nasrin2023ripa/nut-recognizer). I used the nut-recognizer-v14.pkl in the 'models' folder for this implementation. Below is a screenshot of the deployed application:
 
 ![Nut Recognizer App](nut_recognizer_app_cover.png)
 
