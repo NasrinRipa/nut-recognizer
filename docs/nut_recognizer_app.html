@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nut Recognizer</title>
+</head>
+<body>
+    <input id="photo" type="file">
+    <div id="results"></div>
+
+    <script>
+        async function loaded(reader) {
+            const response = await fetch("https://nasrin2023ripa-nut-recognizer.hf.space/run/predict", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ data: [reader.result] })
+            });
+            const json = await response.json();
+            const label = json['data'][0]['label'];
+            results.innerHTML = `<br/> <img src="${reader.result}" width="500"> <p>${label}</p>`;
+        }
+
+        function read() {
+            const reader = new FileReader();
+            reader.addEventListener('load', () => loaded(reader));
+            reader.readAsDataURL(photo.files[0]);
+        }
+
+        const photo = document.getElementById('photo');
+        const results = document.getElementById('results');
+        photo.addEventListener('input', read);
+    </script>
+</body>
+</html>
