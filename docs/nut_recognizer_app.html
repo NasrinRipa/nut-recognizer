@@ -4,7 +4,10 @@
     <title>Nut Recognizer</title>
 </head>
 <body>
-    <input id="photo" type="file">
+    <div id="menu">
+        <input id="photo" type="file">
+        <button id="submit">Submit</button>
+    </div>
     <div id="results"></div>
 
     <script>
@@ -26,8 +29,11 @@
         }
 
         const photo = document.getElementById('photo');
+        const submitButton = document.getElementById('submit');
         const results = document.getElementById('results');
-        photo.addEventListener('input', read);
+
+        submitButton.addEventListener('click', read);
     </script>
 </body>
 </html>
+
