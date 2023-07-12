@@ -38,7 +38,7 @@ The Nut Recognizer model is capable of classifying 14 different types of nuts:
 
 The trained model was deployed to the HuggingFace Spaces Gradio App. You can access the implementaion [here](https://huggingface.co/spaces/nasrin2023ripa/nut-recognizer). I used the nut-recognizer-v14.pkl in the 'models' folder for this implementation. Below is a screenshot of the deployed application:
 
-![Nut Recognizer App](nut_recognizer_app_cover.png)
+![Nut Recognizer App](app/nut_recognizer_app_cover.png)
 
 ## API Integration with GitHub Pages
 
