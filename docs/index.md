@@ -5,7 +5,7 @@ layout: page
 
 <style>
   body {
-    background-color: #FFD700; /* Golden color */
+    background-color: #f8f8f8; /* color */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -14,9 +14,9 @@ layout: page
   .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Adjust this to set the height of the container */
+    align-items: left;
+    justify-content: left;
+    height: 200vh; /* Adjust this to set the height of the container */
   }
 
   /* Add any other custom CSS styles for your content here */
