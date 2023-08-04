@@ -3,7 +3,29 @@ title: Nut Recognizer
 layout: page
 ---
 
-<!-- Add a container div to wrap the content -->
+<style>
+  body {
+    background-image: url("nuts.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust this to set the height of the container */
+  }
+
+  #photo {
+    margin-bottom: 20px;
+  }
+</style>
+
 <div class="container">
   <input id="photo" type="file">
   <div id="results"></div>
@@ -28,36 +50,6 @@ layout: page
   }
 
   const photo = document.getElementById('photo');
-  const container = document.querySelector('.container');
-
-  // Set the background image URL here (relative to your project's root)
-  //const backgroundImageURL = '/assets/background.jpg';
-  const backgroundImageURL = 'types-of-nuts.jpeg';
-  container.style.backgroundImage = `url('${backgroundImageURL}')`;
-
   photo.addEventListener('input', read);
 </script>
 
-<!-- Add the custom CSS for styling -->
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Adjust this to set the height of the container */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-
-  #photo {
-    margin-bottom: 20px;
-  }
-</style>
