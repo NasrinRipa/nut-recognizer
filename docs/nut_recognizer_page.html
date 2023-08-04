@@ -2,64 +2,56 @@
 title: Nut Recognizer
 layout: page
 ---
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    body {
-      background-image: url("nuts.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh; /* Adjust this to set the height of the container */
-    }
+<style>
+  body {
+    background-image: url("nuts.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
 
-    #photo {
-      margin-bottom: 20px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <!-- Content of the "Nut Recognizer" page -->
-    <input id="photo" type="file">
-    <div id="results"></div>
-  </div>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust this to set the height of the container */
+  }
 
-  <!-- JavaScript code for "Nut Recognizer" page -->
-  <script>
-    async function loaded(reader) {
-      const response = await fetch("https://nasrin2023ripa-nut-recognizer.hf.space/run/predict", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ data: [reader.result] })
-      });
-      const json = await response.json();
-      const label = json['data'][0]['label'];
-      results.innerHTML = `<br/> <img src="${reader.result}" width="500"> <p>${label}</p>`;
-    }
+  #photo {
+    margin-bottom: 20px;
+  }
+</style>
 
-    function read() {
-      const reader = new FileReader();
-      reader.addEventListener('load', () => loaded(reader));
-      reader.readAsDataURL(photo.files[0]);
-    }
+<div class="container">
+  <input id="photo" type="file">
+  <div id="results"></div>
+</div>
 
-    const photo = document.getElementById('photo');
-    photo.addEventListener('input', read);
-  </script>
+<script>
+  async function loaded(reader) {
+    const response = await fetch("https://nasrin2023ripa-nut-recognizer.hf.space/run/predict", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ data: [reader.result] })
+    });
+    const json = await response.json();
+    const label = json['data'][0]['label'];
+    results.innerHTML = `<br/> <img src="${reader.result}" width="500"> <p>${label}</p>`;
+  }
 
- 
-</body>
-</html>
+  function read() {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => loaded(reader));
+    reader.readAsDataURL(photo.files[0]);
+  }
+
+  const photo = document.getElementById('photo');
+  photo.addEventListener('input', read);
+</script>
+
 
 
