@@ -1,33 +1,82 @@
----
-title: Nut Recognizer
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nut Recognizer</title>
+  <style>
+    body {
+      background-image: url("nuts.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-<div class="container">
-  <input id="photo" type="file">
-  <div id="results"></div>
-</div>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Adjust this to set the height of the container */
+    }
 
-<script>
-  async function loaded(reader) {
-    const response = await fetch("https://nasrin2023ripa-nut-recognizer.hf.space/run/predict", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ data: [reader.result] })
-    });
-    const json = await response.json();
-    const label = json['data'][0]['label'];
-    results.innerHTML = `<br/> <img src="${reader.result}" width="500"> <p>${label}</p>`;
-  }
+    #photo {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Content of the "Nut Recognizer" page -->
+    <input id="photo" type="file">
+    <div id="results"></div>
+  </div>
 
-  function read() {
-    const reader = new FileReader();
-    reader.addEventListener('load', () => loaded(reader));
-    reader.readAsDataURL(photo.files[0]);
-  }
+  <!-- JavaScript code for "Nut Recognizer" page -->
+  <script>
+    async function loaded(reader) {
+      const response = await fetch("https://nasrin2023ripa-nut-recognizer.hf.space/run/predict", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ data: [reader.result] })
+      });
+      const json = await response.json();
+      const label = json['data'][0]['label'];
+      results.innerHTML = `<br/> <img src="${reader.result}" width="500"> <p>${label}</p>`;
+    }
 
-  const photo = document.getElementById('photo');
-  photo.addEventListener('input', read);
-</script>
+    function read() {
+      const reader = new FileReader();
+      reader.addEventListener('load', () => loaded(reader));
+      reader.readAsDataURL(photo.files[0]);
+    }
+
+    const photo = document.getElementById('photo');
+    photo.addEventListener('input', read);
+  </script>
+
+  <!-- Content of the "Home" page -->
+  <h1>Welcome to the Nut Recognizer!</h1>
+  <p>Unlock the Secrets of Nature's Bounty with Our Advanced Image Recognition Technology.</p>
+  <h3>Discover and Classify 14 Delicious Edible Nuts:</h3>
+  <ol>
+    <li>Almonds</li>
+    <li>Walnuts</li>
+    <li>Cashew nuts</li>
+    <li>Pecans</li>
+    <li>Peanuts</li>
+    <li>Pili nuts</li>
+    <li>Pistachios</li>
+    <li>Hazelnuts</li>
+    <li>Brazil nuts</li>
+    <li>Macadamia nuts</li>
+    <li>Pine nuts</li>
+    <li>Chestnut</li>
+    <li>Hickory nuts</li>
+    <li>Ginkgo nuts</li>
+  </ol>
+  <h2>Start Exploring the Nut Kingdom Today!</h2>
+</body>
+</html>
 
 
