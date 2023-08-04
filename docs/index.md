@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: page
+layout: default
 ---
 
 # Welcome to the Nut Recognizer!
