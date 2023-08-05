@@ -5,7 +5,7 @@ layout: page
 
 <style>
   body {
-    background-color: #FF0000; /* red color */
+    background-color: #F4C2C2; /* pink color */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
