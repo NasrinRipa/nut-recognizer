@@ -15,10 +15,10 @@ layout: page
   }
 
   .container {
-    max-width: 800px; /* Adjust the width of the container to your preference */
+    max-width: 1800px; /* Adjust the width of the container to your preference */
     padding: 20px;
     box-sizing: border-box;
-    margin-top: 60px; /* Adjust this margin to give space for the content */
+    margin-top: 30px; /* Adjust this margin to give space for the content */
   }
 
   /* Text color as navy blue */
