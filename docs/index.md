@@ -5,7 +5,7 @@ layout: page
 
 <style>
   body {
-    background-color: #E6E6FA; /* Light brown color */
+    background-color: #FFB6C1; /* Light brown color */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
