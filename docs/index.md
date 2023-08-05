@@ -5,7 +5,7 @@ layout: page
 
 <style>
   body {
-    background-color: #D2B48C; /* Light brown color */
+    background-color: #E6E6FA; /* Light brown color */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -15,10 +15,10 @@ layout: page
   }
 
   .container {
-    max-width: 1400px; /* Adjust the width of the container to your preference */
+    max-width: 1800px; /* Adjust the width of the container to your preference */
     padding: 20px;
     box-sizing: border-box;
-    margin-top: 60px; /* Adjust this margin to give space for the content */
+    margin-top: 40px; /* Adjust this margin to give space for the content */
   }
 
   /* Add any other custom CSS styles for your content here */
