@@ -8,17 +8,22 @@ layout: page
     background-color: #FF69B4; /* pink color */
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Comic Sans MS font */
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .container {
-    max-width: 1800px; /* Adjust the width of the container to your preference */
+    max-width: 800px; /* Adjust the width of the container to your preference */
     padding: 20px;
     box-sizing: border-box;
-    margin-top: 40px; /* Adjust this margin to give space for the content */
+    margin-top: 60px; /* Adjust this margin to give space for the content */
+  }
+
+  /* Text color as navy blue */
+  h1, h2, h3, h4, h5, h6, p, li {
+    color: navy;
   }
 
   /* Add any other custom CSS styles for your content here */
@@ -46,3 +51,4 @@ layout: page
   </ol>
   <h2>Start Exploring the Nut Kingdom Today!</h2>
 </div>
+
