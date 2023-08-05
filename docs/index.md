@@ -14,37 +14,15 @@ layout: page
     align-items: center;
   }
 
-  .navbar {
-    width: 100%;
-    background-color: #4CAF50; /* Green color for the navbar */
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-  }
-
   .container {
-    margin-top: 60px; /* Adjust this margin to give space for the fixed navbar */
     max-width: 800px; /* Adjust the width of the container to your preference */
     padding: 20px;
     box-sizing: border-box;
-    text-align: center;
+    margin-top: 60px; /* Adjust this margin to give space for the content */
   }
 
   /* Add any other custom CSS styles for your content here */
 </style>
-
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#nut-recognizer">Nut Recognizer</a>
-</div>
 
 <div class="container">
   <h1>Welcome to the Nut Recognizer!</h1>
