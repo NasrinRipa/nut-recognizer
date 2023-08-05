@@ -49,6 +49,6 @@ layout: page
     <li>Hickory nuts</li>
     <li>Ginkgo nuts</li>
   </ol>
-  <h2>Start Exploring the Nut Kingdom Today!</h2>
+  <h2>Click on the Nut Recognizer menu And Start Exploring the Nut Kingdom Today!</h2>
 </div>
 
