@@ -5,7 +5,7 @@ layout: page
 
 <style>
   body {
-    background-color: #F4C2C2; /* pink color */
+    background-color: #BDB76B; /* pink color */
     margin: 0;
     padding: 0;
     font-family: 'Comic Sans MS', cursive, sans-serif; /* Comic Sans MS font */
