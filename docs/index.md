@@ -15,11 +15,10 @@ layout: page
   }
 
   .container {
-    max-width: 800px; /* Adjust the width of the container to your preference */
+    max-width: 1400px; /* Adjust the width of the container to your preference */
     padding: 20px;
     box-sizing: border-box;
-    text-align: left;
-    margin-top: 80px; /* Adjust this margin to give space for the content */
+    margin-top: 60px; /* Adjust this margin to give space for the content */
   }
 
   /* Add any other custom CSS styles for your content here */
