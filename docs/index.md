@@ -32,11 +32,10 @@ layout: page
 
   .container {
     margin-top: 60px; /* Adjust this margin to give space for the fixed navbar */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    max-width: 800px; /* Adjust the width of the container to your preference */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
   }
 
   /* Add any other custom CSS styles for your content here */
